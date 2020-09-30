@@ -1,3 +1,5 @@
+os: linux
+dist: focal
 sudo: required
 services:
   - docker
