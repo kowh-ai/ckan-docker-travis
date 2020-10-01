@@ -17,6 +17,6 @@ script:
   - docker-compose up -d --build
   - docker container ls -a
 
-after_install:
+after_script:
   - echo "...in the after_install"
   - docker container ls -a
