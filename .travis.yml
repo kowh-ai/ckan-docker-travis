@@ -1,6 +1,7 @@
 os: linux
 dist: focal
 sudo: required
+
 services:
   - docker
 
@@ -14,4 +15,6 @@ before_install:
 
 script:
   - docker-compose up -d --build
+
+after_install:
   - docker container ls -a
