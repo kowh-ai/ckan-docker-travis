@@ -17,4 +17,6 @@ script:
   - docker-compose up -d --build
 
 after_script:
+  - sleep 12
   - docker container ls -a
+  - docker exec -it nginx curl -ivf http://nginx
